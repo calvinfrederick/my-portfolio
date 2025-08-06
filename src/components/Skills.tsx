@@ -27,25 +27,25 @@ const skillCategories = [
     title: "Backend Development",
     icon: Code2,
     color: "neon-green",
-    skills: ["FastAPI", "Flask", "Django", "Node.js", "REST APIs", "GraphQL", "Microservices"]
+    skills: ["FastAPI", "Flask","Node.js", "REST APIs"]
   },
   {
     title: "Databases",
     icon: Database,
     color: "neon-purple",
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Vector DBs", "SQL", "NoSQL", "Data Modeling"]
+    skills: ["PostgreSQL", "MongoDB", "CosmosDB", "Redis", "Vector DBs", "SQL", "NoSQL", "Data Modeling"]
   },
   {
     title: "Cloud & DevOps",
     icon: Cloud,
     color: "neon-yellow",
-    skills: ["AWS", "Docker", "Kubernetes", "Apache Airflow", "CI/CD", "Linux", "Terraform"]
+    skills: ["Microsoft Azure"]
   },
   {
     title: "Tools & Others",
     icon: GitBranch,
     color: "neon-blue",
-    skills: ["Git", "VS Code", "Postman", "MLflow", "Streamlit", "Tableau", "Apache Spark"]
+    skills: ["Git", "VS Code"]
   }
 ];
 
@@ -60,7 +60,7 @@ const Skills = () => {
             <span className="text-neon-purple">/&gt;</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Technologies and tools I use to build intelligent solutions
+            Technologies and tools I use to build solutions
           </p>
         </div>
 

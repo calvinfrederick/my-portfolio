@@ -4,42 +4,43 @@ import { Calendar, MapPin, Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    company: "TechCorp AI Labs",
-    position: "ML Engineering Intern",
-    duration: "Jun 2024 - Aug 2024",
-    location: "San Francisco, CA",
-    description: "Developed and optimized neural network models for computer vision applications, achieving 15% improvement in accuracy.",
-    technologies: ["Python", "TensorFlow", "OpenCV", "AWS"],
+    company: "Synapxe (GovTech Affiliate)",
+    position: "AI Engineer Intern",
+    duration: "May 2025 - Present ",
+    location: "Singapore",
+    description: "Designing internal tools and AI assistants to support healthcare AI workflows and decision-making.",
+    technologies: ["ReactJS", "TypeScript", "HTML", "CSS", "Python", "Azure"],
     achievements: [
-      "Built end-to-end ML pipeline for image classification",
-      "Reduced model inference time by 30%",
-      "Presented findings to senior engineering team"
+      "Built internal dashboards to visualize AI insights, improving decision-making efficiency",
+      "Co-developed AI model monitoring tools to enhance model visibility and reliability",
+      "Collaborating with AI and DevOps teams to bridge frontend UI with backend pipelines and cloud services",
+      "Currently developing an AI Agent Data Analyst to automate analysis and reporting of AI workflow data"
     ]
   },
   {
-    company: "DataFlow Solutions",
-    position: "Backend Developer Intern",
-    duration: "Jan 2024 - May 2024",
-    location: "Remote",
-    description: "Built scalable data processing systems and APIs to handle large-scale analytics workloads.",
-    technologies: ["Python", "FastAPI", "PostgreSQL", "Docker"],
+    company: "Siemens",
+    position: "Data Science Intern",
+    duration: "August 2024 - November 2024",
+    location: "Singapore",
+    description: "Developed analytics tools and dashboards to support sales and leadership engagement.",
+    technologies: ["Python", "SQL", "Pandas", "Scikit-learn", "Matplotlib"],
     achievements: [
-      "Designed RESTful APIs serving 10K+ requests daily",
-      "Implemented automated data validation pipelines",
-      "Optimized database queries reducing response time by 40%"
+      "Created CxO database and dashboards to improve stakeholder collaboration",
+      "Used RFM analysis and regression models to identify high-churn customers",
+      "Visualized customer trends to support data-driven retention strategies"
     ]
   },
   {
-    company: "University Research Lab",
-    position: "Data Science Research Assistant",
-    duration: "Sep 2023 - Dec 2023",
-    location: "University Campus",
-    description: "Conducted research on natural language processing applications in healthcare data analysis.",
-    technologies: ["Python", "scikit-learn", "NLTK", "Pandas"],
+    company: "Tier One Entertainment",
+    position: "Data Analyst Intern",
+    duration: "May 2024 - August 2024",
+    location: "Manila, Philippines",
+    description: "Automated influencer data collection and campaign tracking to improve marketing operations.",
+    technologies: ["AppSheet", "Python", "Pandas", "OCR", "Regex", "Pillow", "Pytesseract"],
     achievements: [
-      "Analyzed 50K+ medical records using NLP techniques",
-      "Co-authored research paper on sentiment analysis",
-      "Developed automated text preprocessing pipeline"
+      "Created AppSheet app to estimate campaign value, reducing analyst workload by 50%",
+      "Performed social media analysis using Klear and Meltwater tools",
+      "Built OCR pipelines for automating document digitization and entry"
     ]
   }
 ];
@@ -55,7 +56,7 @@ const Experience = () => {
             <span className="text-neon-blue">/&gt;</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            My journey through various internships and roles in AI and software development
+            My journey through various internships and roles in AI, Data Analytics & Software Development
           </p>
         </div>
 

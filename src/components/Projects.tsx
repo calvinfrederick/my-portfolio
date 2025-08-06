@@ -54,7 +54,7 @@ const Projects = () => {
             <span className="text-neon-green">/&gt;</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A showcase of my AI and machine learning projects that solve real-world problems
+            A showcase of my AI and machine learning projects that solve problems
           </p>
         </div>
 

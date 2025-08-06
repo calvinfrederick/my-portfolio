@@ -6,13 +6,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-muted-foreground font-mono flex items-center justify-center gap-2 flex-wrap">
-            Built with 
-            <span className="flex items-center gap-1">
-              <Laptop className="w-4 h-4 text-neon-blue" />
-              <span className="text-neon-blue">+</span>
-              <Coffee className="w-4 h-4 text-neon-yellow" />
-            </span>
-            by
+            Built by 
             <span className="text-neon-green font-semibold">Calvin Soe Frederick</span>
           </p>
           <div className="mt-4 flex justify-center">

@@ -36,24 +36,24 @@ const Contact = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/calvinsoe",
+      url: "https://www.linkedin.com/in/calvin-frederick/",
       icon: Linkedin,
       color: "text-neon-blue",
       hoverColor: "hover:text-neon-blue"
     },
     {
       name: "GitHub",
-      url: "https://github.com/calvinsoe",
+      url: "https://github.com/calvinfrederick",
       icon: Github,
-      color: "text-neon-green",
-      hoverColor: "hover:text-neon-green"
+      color: "text-neon-yellow",
+      hoverColor: "hover:text-neon-yellow"
     },
     {
       name: "Email",
-      url: "mailto:calvin.soe@example.com",
+      url: "mailto:e1121935@u.nus.edu",
       icon: Mail,
-      color: "text-neon-yellow",
-      hoverColor: "hover:text-neon-yellow"
+      color: "text-neon-green",
+      hoverColor: "hover:text-neon-green"
     }
   ];
 
@@ -79,9 +79,6 @@ const Contact = () => {
                 <Send className="w-6 h-6 text-neon-yellow" />
                 Send a Message
               </CardTitle>
-              <CardDescription>
-                Have a project in mind or just want to chat about AI? Drop me a line!
-              </CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">

@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import heroCharacter from "@/assets/hero-character.png";
+import heroCharacter from "@/assets/me22.png";
 
 const Hero = () => {
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToProjects = () => {
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -20,13 +24,13 @@ const Hero = () => {
               </h1>
               <div className="inline-block bg-card px-4 py-2 pixel-border">
                 <span className="text-neon-blue font-mono text-sm lg:text-base">
-                  &gt; AI_Engineer.aspiring()
+                  &gt; AI/ML_Engineer.aspiring()
                 </span>
               </div>
             </div>
             
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
-              Aspiring AI Engineer passionate about solving real-world problems 
+              Aspiring AI/ML Engineer passionate about solving real-world problems 
               with machine learning and data. Turning complex algorithms into 
               elegant solutions.
             </p>
@@ -39,6 +43,7 @@ const Hero = () => {
                 Let's Connect
               </Button>
               <Button 
+                onClick={scrollToProjects}
                 variant="outline"
                 className="border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-background px-8 py-3 text-lg pixel-border transition-all duration-200"
               >
