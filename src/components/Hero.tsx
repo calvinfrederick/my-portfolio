@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import heroCharacter from "@/assets/me22.png";
+import heroCharacter from "../assets/me22.png";
 
 const Hero = () => {
   const scrollToContact = () => {
