@@ -7,7 +7,7 @@ const experiences = [
     company: "Synapxe (GovTech Affiliate)",
     position: "AI Engineer Intern",
     duration: "May 2025 - Present ",
-    location: "Singapore",
+    location: "Singapore, Singapore",
     description: "Designing internal tools and AI assistants to support healthcare AI workflows and decision-making.",
     technologies: ["ReactJS", "TypeScript", "HTML", "CSS", "Python", "Azure"],
     achievements: [
@@ -21,7 +21,7 @@ const experiences = [
     company: "Siemens",
     position: "Data Science Intern",
     duration: "August 2024 - November 2024",
-    location: "Singapore",
+    location: "Singapore, Singapore",
     description: "Developed analytics tools and dashboards to support sales and leadership engagement.",
     technologies: ["Python", "SQL", "Pandas", "Scikit-learn", "Matplotlib"],
     achievements: [
