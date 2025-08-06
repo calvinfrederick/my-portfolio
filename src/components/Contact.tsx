@@ -160,7 +160,7 @@ const Contact = () => {
               <CardContent className="space-y-6">
                 <div>
                   <h4 className="font-semibold text-foreground mb-2 font-mono">Location</h4>
-                  <p className="text-muted-foreground">San Francisco Bay Area, CA</p>
+                  <p className="text-muted-foreground">Singapore, Singapore</p>
                   <p className="text-muted-foreground text-sm">Open to remote opportunities</p>
                 </div>
                 
@@ -204,21 +204,21 @@ const Contact = () => {
                     <div className="w-2 h-2 bg-neon-green rounded-full mt-2 animate-pixel-pulse"></div>
                     <div>
                       <p className="text-foreground font-mono font-semibold">Open to opportunities</p>
-                      <p className="text-muted-foreground text-sm">Looking for AI/ML engineering roles</p>
+                      <p className="text-muted-foreground text-sm">Looking for AI/ML/DevOps Engineering Roles</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-neon-blue rounded-full mt-2 animate-pixel-pulse"></div>
                     <div>
-                      <p className="text-foreground font-mono font-semibold">Building projects</p>
-                      <p className="text-muted-foreground text-sm">Working on computer vision applications</p>
+                      <p className="text-foreground font-mono font-semibold">Building</p>
+                      <p className="text-muted-foreground text-sm">Internal AI Agents & Frontend Dashboards @ Synapxe </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-neon-yellow rounded-full mt-2 animate-pixel-pulse"></div>
                     <div>
                       <p className="text-foreground font-mono font-semibold">Learning</p>
-                      <p className="text-muted-foreground text-sm">Exploring LLMs and multi-modal AI</p>
+                      <p className="text-muted-foreground text-sm">Tools that bridge ML, UI, and Cloud services</p>
                     </div>
                   </div>
                 </div>

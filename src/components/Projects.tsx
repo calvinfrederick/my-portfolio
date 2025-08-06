@@ -5,43 +5,40 @@ import { ExternalLink, Github, Zap } from "lucide-react";
 
 const projects = [
   {
-    title: "SmartHealth Predictor",
-    description: "Machine learning model that predicts potential health risks based on lifestyle data. Built with ensemble methods and achieved 87% accuracy on test data.",
-    technologies: ["Python", "Scikit-learn", "Pandas", "Flask", "React"],
-    github: "https://github.com/calvinsoe/smarthealth-predictor",
-    live: "https://smarthealth-demo.netlify.app",
-    highlights: ["87% prediction accuracy", "Real-time data processing", "Interactive web dashboard"]
+    title: "GovTech x NTU Hackathon - Insurance Claims Workflow (1st Place)",
+    description: "Built a no-code solution using GovTech's Build on BOB (BoB) platform to streamline car insurance claims by connecting users, insurers, and workshops into a unified claims architecture.",
+    technologies: ["GovTech BoB", "No-code", "Process Automation"],
+    github: null,
+    highlights: [
+      "1st Place Winner at NTU x GovTech Hackathon",
+      "Designed multi-stakeholder insurance claims flow",
+      "Used BoB to prototype end-to-end no-code solution"
+    ]
   },
   {
-    title: "NLP Sentiment Analyzer",
-    description: "Advanced sentiment analysis tool for social media data using transformer models. Processes 10K+ posts per minute with multi-language support.",
-    technologies: ["Python", "Transformers", "PyTorch", "FastAPI", "Docker"],
-    github: "https://github.com/calvinsoe/nlp-sentiment",
-    highlights: ["Multi-language support", "Real-time processing", "94% accuracy on benchmark"]
+    title: "NUS Statistics & Data Science Mini Competition",
+    description: "Explored 1980s song popularity using EDA and clustering in R to uncover key factors driving hit tracks.",
+    technologies: ["R", "K-means Clustering", "ggplot2"],
+    github: null,
+    highlights: [
+      "Led feature extraction & EDA",
+      "Applied K-means clustering to group similar songs",
+      "Investigated correlation between features and popularity"
+    ]
   },
   {
-    title: "Computer Vision Traffic Monitor",
-    description: "Real-time traffic flow analysis using YOLO object detection. Deployed on edge devices for smart city applications.",
-    technologies: ["Python", "YOLO", "OpenCV", "TensorRT", "Raspberry Pi"],
-    github: "https://github.com/calvinsoe/traffic-monitor",
-    highlights: ["Edge device deployment", "Real-time object tracking", "30+ FPS processing"]
-  },
-  {
-    title: "AI Study Buddy Chatbot",
-    description: "Intelligent tutoring system that helps students with programming concepts. Uses RAG architecture with domain-specific knowledge base.",
-    technologies: ["Python", "LangChain", "Vector DB", "Streamlit", "OpenAI"],
-    github: "https://github.com/calvinsoe/ai-study-buddy",
-    live: "https://ai-study-buddy.streamlit.app",
-    highlights: ["RAG architecture", "Domain-specific knowledge", "Interactive learning"]
-  },
-  {
-    title: "Financial Data Pipeline",
-    description: "Automated ETL pipeline for financial data analysis with real-time market predictions using LSTM networks.",
-    technologies: ["Python", "Apache Airflow", "PostgreSQL", "TensorFlow", "AWS"],
-    github: "https://github.com/calvinsoe/financial-pipeline",
-    highlights: ["Automated ETL", "Real-time predictions", "Cloud deployment"]
+    title: "NUS Datathon 2024 - Singlife",
+    description: "Analyzed customer disengagement during the insurance onboarding process and applied classification models to predict drop-off behavior.",
+    technologies: ["Python", "SMOTE", "Pandas", "Scikit-learn"],
+    github: null,
+    highlights: [
+      "Led classification modeling with imbalanced data",
+      "Performed EDA to uncover user disengagement patterns",
+      "Presented data-driven retention strategies"
+    ]
   }
 ];
+
 
 const Projects = () => {
   return (
@@ -54,7 +51,7 @@ const Projects = () => {
             <span className="text-neon-green">/&gt;</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A showcase of my AI and machine learning projects that solve problems
+            A showcase of my AI/ML, Data Analysis projects that solve problems
           </p>
         </div>
 
@@ -98,7 +95,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                
+{/*                 
                 <div className="flex gap-3 mt-auto pt-4">
                   <Button
                     variant="outline"
@@ -111,19 +108,7 @@ const Projects = () => {
                       Code
                     </a>
                   </Button>
-                  {project.live && (
-                    <Button
-                      size="sm"
-                      className="bg-neon-green text-background hover:bg-neon-green/90 pixel-shadow flex-1"
-                      asChild
-                    >
-                      <a href={project.live} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Live
-                      </a>
-                    </Button>
-                  )}
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           ))}

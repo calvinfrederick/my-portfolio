@@ -98,9 +98,9 @@ const Skills = () => {
         </div>
 
         {/* Additional stats */}
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
+{/*         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center">
-            <div className="text-3xl lg:text-4xl font-bold text-neon-yellow mb-2">15+</div>
+            <div className="text-3xl lg:text-4xl font-bold text-neon-yellow mb-2">1</div>
             <div className="text-muted-foreground font-mono">ML Models Built</div>
           </div>
           <div className="text-center">
@@ -108,14 +108,10 @@ const Skills = () => {
             <div className="text-muted-foreground font-mono">Internships</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl lg:text-4xl font-bold text-neon-green mb-2">20+</div>
+            <div className="text-3xl lg:text-4xl font-bold text-neon-green mb-2">3</div>
             <div className="text-muted-foreground font-mono">Projects</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl lg:text-4xl font-bold text-neon-purple mb-2">2</div>
-            <div className="text-muted-foreground font-mono">Research Papers</div>
-          </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

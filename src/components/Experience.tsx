@@ -52,7 +52,7 @@ const Experience = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold font-pixel mb-4">
             <span className="text-neon-blue">&lt;</span>
-            Experience
+            Work Experience
             <span className="text-neon-blue">/&gt;</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
