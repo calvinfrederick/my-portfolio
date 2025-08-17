@@ -1,70 +1,7 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Github, Linkedin, Send, MapPin } from "lucide-react";
-import { useToast } from "@/components/ui/use-toast";
-import emailjs from "@emailjs/browser";
+import { Mail, Github, Linkedin, MapPin, Award } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    try {
-      // Show loading state
-      toast({
-        title: "Sending message...",
-        description: "Please wait while we send your message.",
-      });
-
-      // Send email using EmailJS
-      const result = await emailjs.send(
-        'service_uiw1mdo', // Replace with your EmailJS service ID
-        'template_b06e9ti', // Replace with your EmailJS template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
-      );
-
-      // Success
-      toast({
-        title: "Message sent successfully!",
-        description: "Thanks for reaching out. I'll get back to you soon!",
-      });
-      
-      // Reset form
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      
-    } catch (error) {
-      console.error('Email send error:', error);
-      toast({
-        title: "Failed to send message",
-        description: "Please try again or contact me directly via email.",
-        variant: "destructive",
-      });
-    }
-  };
 
   const socialLinks = [
     {
@@ -105,79 +42,64 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
+          {/* Certifications */}
           <Card className="bg-card border-border pixel-border">
             <CardHeader>
               <CardTitle className="text-2xl text-foreground flex items-center gap-2">
-                <Send className="w-6 h-6 text-neon-yellow" />
-                Send a Message
+                <Award className="w-6 h-6 text-neon-purple" />
+                Certifications
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-foreground font-mono">Name</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="bg-input border-border focus:border-neon-yellow pixel-border"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-foreground font-mono">Email</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="bg-input border-border focus:border-neon-yellow pixel-border"
-                      placeholder="your.email@example.com"
-                    />
+              <div className="space-y-6">
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-neon-purple rounded-full mt-2 animate-pixel-pulse"></div>
+                  <div>
+                    <p className="text-foreground font-mono font-semibold text-lg">AWS Certified Cloud Practitioner</p>
+                    <p className="text-muted-foreground text-sm mb-2">Cloud fundamentals and AWS services</p>
+                    <a 
+                      href="#" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-neon-purple hover:text-neon-purple/80 text-sm underline transition-colors"
+                    >
+                      View Certificate →
+                    </a>
                   </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <Label htmlFor="subject" className="text-foreground font-mono">Subject</Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    required
-                    className="bg-input border-border focus:border-neon-yellow pixel-border"
-                    placeholder="Project collaboration, Job opportunity, etc."
-                  />
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-neon-green rounded-full mt-2 animate-pixel-pulse"></div>
+                  <div>
+                    <p className="text-foreground font-mono font-semibold text-lg">Google Cloud Professional Data Engineer</p>
+                    <p className="text-muted-foreground text-sm mb-2">Data processing and ML pipeline design</p>
+                    <a 
+                      href="#" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-neon-green hover:text-neon-green/80 text-sm underline transition-colors"
+                    >
+                      View Certificate →
+                    </a>
+                  </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-foreground font-mono">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    rows={5}
-                    className="bg-input border-border focus:border-neon-yellow pixel-border resize-none"
-                    placeholder="Tell me about your project or what you'd like to discuss..."
-                  />
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-neon-blue rounded-full mt-2 animate-pulse"></div>
+                  <div>
+                    <p className="text-foreground font-mono font-semibold text-lg">Microsoft Azure AI Engineer Associate</p>
+                    <p className="text-muted-foreground text-sm mb-2">AI solutions and cognitive services</p>
+                    <a 
+                      href="#" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-neon-blue hover:text-neon-blue/80 text-sm underline transition-colors"
+                    >
+                      View Certificate →
+                    </a>
+                  </div>
                 </div>
-                
-                <Button 
-                  type="submit"
-                  className="w-full bg-neon-yellow text-background hover:bg-neon-yellow/90 font-bold py-3 pixel-shadow transition-all duration-200 hover:translate-y-[-2px]"
-                >
-                  <Send className="w-4 h-4 mr-2" />
-                  Send Message
-                </Button>
-              </form>
+              </div>
             </CardContent>
           </Card>
 
@@ -257,6 +179,8 @@ const Contact = () => {
                 </div>
               </CardContent>
             </Card>
+
+
           </div>
         </div>
       </div>
