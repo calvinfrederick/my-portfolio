@@ -52,16 +52,35 @@ const Contact = () => {
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
-                <div className="flex items-start gap-3">
-                  <div className="w-3 h-3 bg-neon-purple rounded-full mt-2 animate-pixel-pulse"></div>
+
+              {/* Add certificates here */}
+
+              <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-neon-blue rounded-full mt-2 animate-pixel-pulse"></div>
                   <div>
-                    <p className="text-foreground font-mono font-semibold text-lg">AWS Certified Cloud Practitioner</p>
-                    <p className="text-muted-foreground text-sm mb-2">Cloud fundamentals and AWS services</p>
+                    <p className="text-foreground font-mono font-semibold text-lg">Supervised Machine Learning: Regression and Classification</p>
+                    <p className="text-muted-foreground text-sm mb-2">Jul 2024</p>
                     <a 
-                      href="#" 
+                      href="https://www.coursera.org/account/accomplishments/certificate/V5F47GQPTMFK" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-neon-purple hover:text-neon-purple/80 text-sm underline transition-colors"
+                      className="text-neon-blue hover:text-neon-blue/80 text-sm underline transition-colors"
+                    >
+                      View Certificate →
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-3 h-3 bg-neon-yellow rounded-full mt-2 animate-pixel-pulse"></div>
+                  <div>
+                    <p className="text-foreground font-mono font-semibold text-lg">SQL for Data Analysis: Begineer MySQL Business Intelligence</p>
+                    <p className="text-muted-foreground text-sm mb-2">Jan 2024</p>
+                    <a 
+                      href="https://udemy-certificate.s3.amazonaws.com/image/UC-10db83f9-9c97-4028-9723-16a1128ac111.jpg" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-neon-yellow hover:text-neon-yellow/80 text-sm underline transition-colors"
                     >
                       View Certificate →
                     </a>
@@ -71,10 +90,10 @@ const Contact = () => {
                 <div className="flex items-start gap-3">
                   <div className="w-3 h-3 bg-neon-green rounded-full mt-2 animate-pixel-pulse"></div>
                   <div>
-                    <p className="text-foreground font-mono font-semibold text-lg">Google Cloud Professional Data Engineer</p>
-                    <p className="text-muted-foreground text-sm mb-2">Data processing and ML pipeline design</p>
+                    <p className="text-foreground font-mono font-semibold text-lg">Google Data Analytics Certificate</p>
+                    <p className="text-muted-foreground text-sm mb-2">Apr 2023</p>
                     <a 
-                      href="#" 
+                      href="https://www.credly.com/badges/24c7de4f-8dd9-42be-83cf-7a9d518584f4/linked_in_profile" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-neon-green hover:text-neon-green/80 text-sm underline transition-colors"
@@ -83,22 +102,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="w-3 h-3 bg-neon-blue rounded-full mt-2 animate-pulse"></div>
-                  <div>
-                    <p className="text-foreground font-mono font-semibold text-lg">Microsoft Azure AI Engineer Associate</p>
-                    <p className="text-muted-foreground text-sm mb-2">AI solutions and cognitive services</p>
-                    <a 
-                      href="#" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-neon-blue hover:text-neon-blue/80 text-sm underline transition-colors"
-                    >
-                      View Certificate →
-                    </a>
-                  </div>
-                </div>
+
               </div>
             </CardContent>
           </Card>
