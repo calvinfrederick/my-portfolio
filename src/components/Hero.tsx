@@ -24,15 +24,13 @@ const Hero = () => {
               </h1>
               <div className="inline-block bg-card px-4 py-2 pixel-border">
                 <span className="text-neon-blue font-mono text-sm lg:text-base">
-                  &gt; AI/ML_Engineer.aspiring()
+                  &gt; Intern @ Tiktok
                 </span>
               </div>
             </div>
             
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
-              Aspiring AI/ML Engineer passionate about solving real-world problems 
-              with machine learning and data. Turning complex algorithms into 
-              elegant solutions.
+              Passionate about solving real-world problems with data science
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

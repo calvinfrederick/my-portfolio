@@ -16,6 +16,30 @@ const projects = [
     ]
   },
   {
+    title: "Fradulent Job Posting Detection",
+    description: "Exploratory Analysis and Detection Strategy for Fraudulent Job Advertisements",
+    technologies: ["Python", "Jupyter", "TF-IDF", "Machine Learning", "EDA", "Feature Engineering"],
+    github: "https://github.com/calvinfrederick/recruitment-scam",
+    highlights: [
+      "Analyzed EMSCAD dataset (17,880 postings) to map fraudulent listing patterns",
+      "Engineered text-based and credibility features across job descriptions and metadata",
+      "Designed a hybrid TF-IDF and structured metadata fraud detection pipeline",
+      "Developed precision/recall-focused evaluation framework for imbalanced datasets"
+    ]
+  },
+  {
+    title: "Diabetes Risk Prediction using Classification Models",
+    description: "Comparative Analysis of Classification Models for Diabetes Prediction",
+    technologies: ["R", "Logistic Regression", "KNN", "Decision Trees", "Naive Bayes", "Supervised Learning"],
+    github: "https://github.com/calvinfrederick/statistical_report",
+    highlights: [
+      "Analyzed 70,692 US health survey responses in R to predict diabetes status",
+      "Implemented and evaluated Logistic Regression, KNN, Decision Trees, and Naive Bayes models",
+      "Assessed performance using goodness-of-fit and key classification evaluation metrics",
+      "Applied statistical reasoning to identify the optimal model for health risk prediction"
+    ]
+  },
+  {
     title: "NUS Statistics & Data Science Mini Competition",
     description: "Explored 1980s song popularity using EDA and clustering in R to uncover key factors driving hit tracks.",
     technologies: ["R", "K-means Clustering", "ggplot2"],
@@ -95,20 +119,21 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-{/*                 
-                <div className="flex gap-3 mt-auto pt-4">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-foreground text-foreground hover:bg-foreground hover:text-background pixel-border flex-1"
-                    asChild
-                  >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                </div> */}
+{project.github && (
+                  <div className="flex gap-3 mt-auto pt-4">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-foreground text-foreground hover:bg-foreground hover:text-background pixel-border flex-1"
+                      asChild
+                    >
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Link To GitHub
+                      </a>
+                    </Button>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}

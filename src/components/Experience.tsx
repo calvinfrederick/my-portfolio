@@ -67,7 +67,7 @@ const Experience = () => {
             <span className="text-neon-blue">/&gt;</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            My journey through various internships and roles in AI, Data Analytics & Software Development
+            My journey through various internships and roles in AI, Data Analytics & Product Management
           </p>
         </div>
 
