@@ -4,9 +4,20 @@ import { Calendar, MapPin, Briefcase } from "lucide-react";
 
 const experiences = [
   {
+    company: "TikTok (ByteDance)",
+    position: "Product Solutions & Operations Intern",
+    duration: "Aug 2026 - Present",
+    location: "Singapore, Singapore",
+    description: "Translating complex advertiser performance metrics into executive GTM strategy using internal BI tools and prototyping AI-powered reporting agents to automate data summarisation and streamline reporting workflows.",
+    technologies: ["Internal BI Tools", "Performance Metrics", "AI Agent Architecture", "Prompt Engineering", "Technical Stakeholder Management"],
+    achievements: [
+      "Built and maintained a daily metrics bot to summarise revenue for internal team, replacing manual tracking workflows and delivering automated, real-time revenue visibility"
+    ]
+  },
+  {
     company: "Synapxe (GovTech Affiliate)",
     position: "AI Engineer Intern",
-    duration: "May 2025 - Present ",
+    duration: "May 2025 - Dec 2026 ",
     location: "Singapore, Singapore",
     description: "Designing internal tools and AI assistants to support healthcare AI workflows and decision-making.",
     technologies: ["ReactJS", "TypeScript", "HTML", "CSS", "Python", "Azure"],
